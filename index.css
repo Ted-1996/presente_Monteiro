@@ -1,0 +1,119 @@
+body { 
+    background: rgb(131,111,255);
+    background: linear-gradient(0deg, rgba(131,111,255,1) 21%, rgba(0,227,255,0.9159313383556548) 100%);
+}
+
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 370px;
+    height: 370px;
+    border-radius: 60%;
+    border:black 4px;
+  }
+
+  .PERFIL {
+    text-align: center;
+  }
+
+  h1 
+  {
+    font-family: Luminari, fantasy;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+p
+{
+    font-family: Snell Roundhand, cursive ;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.gallery-container
+{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+
+    font-family: Apple Chancery, cursive;
+    font-size: 4wp;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+
+
+}
+
+
+.gallery-container a
+{
+padding: 10px;
+}
+ 
+.gallery-container .imagem
+{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-container .imagem img
+{
+    width: 100%;
+    transition: 100%;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.gallery-container .imagem:hover img{
+    transform: scale(1.5);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+  }
+
+@media screen and (max-widith:1200px) {
+    
+    .gallery-container .imagem{
+        flex: 33,33px;    
+    }
+}
+
+@media screen and (max-widith:768px)
+{
+    .gallery-container .imagem{
+        flex: 50px;    
+    }
+    .gallery-container{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-widith:480px) {
+    
+    .gallery-container .imagem{
+        flex: 100px;    
+    }
+}
